@@ -1,0 +1,343 @@
+*{
+    width: auto;
+    height: auto;
+    font-family: 'Finger Paint', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Main Page Head */
+
+header {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#backgroundimg {
+    width: 85vmax;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigator */
+
+#main-menu {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 72%;    
+    height: 5vh;
+    font-family: 'Finger Paint', cursive;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+}
+
+#main-menu img {
+    height: 26px;
+}
+
+#main-menu ul {
+    width: 80%;
+    display: inline-flex;
+    justify-content:space-between;
+    font-size: 26px;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    align-items: end;
+}
+
+li{
+    display: inline;
+}
+
+.languages{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+.right-side-menu{
+    position: relative;
+    margin-left: auto;
+    display: flex;
+}
+
+#contact {
+    width: 26vh;
+    text-align: right;
+}
+
+.lang {
+    width: 17vh;
+    text-align: left;
+    padding-left: 1%;
+}
+
+
+/* Menu Tiles */
+
+/* #section-on-main-page {
+    margin-left: 10vh;
+    margin-right: 10vh;
+} */
+
+#tiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+#tiles2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.menu-tiles {
+    justify-content: center;
+    width: 32vh;
+}
+
+.menu-tiles:hover {
+    scale: 1.1;
+}
+
+.menu-tiles p{
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: -2vh;
+}
+
+.menu-tiles img {
+    display: flex;
+    height: 22vh;
+    padding: 0.5vh;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Haifa */
+
+#haifa-section {
+    font-family: 'Finger Paint', cursive;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+#haifa-main-article {
+    width: 85vmax;
+    padding: 0px 2%;
+}
+
+.haifa-article p {
+    width: 80%;
+}
+
+#haifa-section h1{
+    text-align: center;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-size: 50px;
+}
+
+#haifa-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+}
+
+#haifa-section div{
+    padding: 1%;
+    margin-top: -1vh;
+    font-size: 19px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+#haifa-img-1 {
+    float: left;
+    margin-right: 2%;
+}
+
+#haifa-img-2 {
+    float: right;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#links a:hover{
+    scale: 1.1;
+}
+
+#links img {
+    height: 5vh;
+}
+
+#links a{
+    justify-content: center;
+    text-align: center;
+}
+
+#links p{
+    color: black;
+    text-align: center;
+}
+
+#haifa-wiki {
+    margin-left: 1vh;
+}
+
+
+/* Map */
+
+#map img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#BigMap {
+    height: 60vh;
+}
+
+#wraper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+#left-side-city a{
+    display: flex;
+    flex-direction: column;
+    width: 10vh;
+    margin-right: 2vh;
+}
+
+#right-side-city a{
+    display: flex;
+    flex-direction: column;
+    width: 10vh;
+    margin-left: 2vh;
+}
+
+/* Map buttons on pictures */
+
+.anim{
+    transform-style: preserve-3d;
+}
+
+.anim::after {
+	background: #3a4b99;
+	content: 'non';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+    text-align: center;
+}
+
+.anim:hover {
+    transform-origin: center;
+	transform: rotateX(-90deg) translateY(100%);
+}
+
+#akko::after{
+    content: 'Akko';
+}
+
+#haifaflip::after{
+    content: 'Haifa';
+}
+
+#tel-aviv::after{
+    content: 'Tel-Aviv';
+}
+
+#ashdod::after{
+    content: 'Ashdod';
+}
+
+#ashqelon::after{
+    content: 'Ashqelon';
+}
+
+#nazareth::after{
+    content: 'Nazareth';
+}
+
+#jerusalem::after{
+    content: 'JERUSALEM';
+    font-size: smaller;
+}
+
+#beersheva::after{
+    content: 'Beer Sheva';
+}
+
+#mitzpe-ramon::after{
+    content: 'Mitzpe Ramon';
+}
+
+#eilat::after{
+    content: 'Eilat';
+}
+
+#mitzpe-ramon {
+    margin-top: -3vh;
+}
+
+#eilat {
+    margin-top: -2.5vh;
+}
+ 
+/*Comming Soon*/
+
+#comingsoon {
+    width: 50vmax;
+}
+
+.soon {
+    text-align: center;
+}
+
+#backfromsoon {
+    font-family: 'Finger Paint', cursive;
+    text-decoration: none;
+    font-size: xxx-large;
+    color: black;
+}
+
+#backfromsoon:hover {
+    color: #F29423;
+    border: 1px black;
+}
